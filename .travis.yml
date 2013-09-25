@@ -1,8 +1,8 @@
 language: objective-c
-before_install: ./install_dependencies.sh
+#before_install: ./install_dependencies.sh
 
 # build via xcodetest
-script: ./build_and_run_unit_tests.sh DemoUnitTest DemoUnitTestTests
+#script: ./build_and_run_unit_tests.sh DemoUnitTest DemoUnitTestTests
 
 #before_install: "git submodule init && git submodule update && sudo gem update --system && sudo gem install bundler && bundle install"
 #script: "bundle exec rake test --trace"
