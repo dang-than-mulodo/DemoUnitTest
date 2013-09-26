@@ -208,13 +208,13 @@ static NSString *NotificationNametest = @"NotificationString";
 }
 
 #pragma mark - Partial mocks
-- (void)testForwardsUnstubbedMethodsCallsToRealObjectOnPartialMock
-{
-	TestClassWithClassMethods *object = [[TestClassWithClassMethods alloc] init];
-	mock = [OCMockObject partialMockForObject:object];
-
-    STAssertEqualObjects(@"Bar", [mock bar], @"Should have returned value from real object.");
-}
+//- (void)testForwardsUnstubbedMethodsCallsToRealObjectOnPartialMock
+//{
+//	TestClassWithClassMethods *object = [[TestClassWithClassMethods alloc] init];
+//	mock = [OCMockObject partialMockForObject:object];
+//
+//    STAssertEqualObjects(@"Bar", [mock bar], @"Should have returned value from real object.");
+//}
 
 #pragma mark - Observer mocks
 
