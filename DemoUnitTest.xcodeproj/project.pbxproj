@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CE1BFBF317EAD42A00D3AA9E /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEE844117EAB9BC009F53BF /* libOCMock.a */; };
 		CE3AB1A817EA909300E1246B /* UIWebView+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3AB1A717EA909300E1246B /* UIWebView+Extention.m */; };
-		CE3AB1AA17EA98EA00E1246B /* JSTools.js in Sources */ = {isa = PBXBuildFile; fileRef = CE3AB1A917EA98EA00E1246B /* JSTools.js */; };
 		CE3E71BD17EC329800956637 /* FLIPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E71BB17EC329800956637 /* FLIPDetailViewController.m */; };
 		CE3E71BE17EC329800956637 /* FLIPDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3E71BC17EC329800956637 /* FLIPDetailViewController.xib */; };
 		CE425EB417E83C2D00A7C16E /* FLIPDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE425EB317E83C2D00A7C16E /* FLIPDemoTableViewController.m */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		CE3AB1A617EA909300E1246B /* UIWebView+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Extention.h"; sourceTree = "<group>"; };
 		CE3AB1A717EA909300E1246B /* UIWebView+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Extention.m"; sourceTree = "<group>"; };
-		CE3AB1A917EA98EA00E1246B /* JSTools.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = JSTools.js; path = Components/JSTools.js; sourceTree = "<group>"; };
 		CE3E71B917EC1E8A00956637 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		CE3E71BA17EC329800956637 /* FLIPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLIPDetailViewController.h; sourceTree = "<group>"; };
 		CE3E71BB17EC329800956637 /* FLIPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLIPDetailViewController.m; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 		CE93D60517E6D8CA003D5F85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE3AB1A917EA98EA00E1246B /* JSTools.js */,
 				CE93D60617E6D8CA003D5F85 /* DemoUnitTest-Info.plist */,
 				CE93D60717E6D8CA003D5F85 /* InfoPlist.strings */,
 				CE93D60A17E6D8CA003D5F85 /* main.m */,
@@ -349,7 +346,6 @@
 				CE93D60F17E6D8CA003D5F85 /* FLIPAppDelegate.m in Sources */,
 				CE3E71BD17EC329800956637 /* FLIPDetailViewController.m in Sources */,
 				CE93D61817E6D8CA003D5F85 /* FLIPViewController.m in Sources */,
-				CE3AB1AA17EA98EA00E1246B /* JSTools.js in Sources */,
 				CE3AB1A817EA909300E1246B /* UIWebView+Extention.m in Sources */,
 				CE93D63F17E70008003D5F85 /* FLIPPage2ViewController.m in Sources */,
 				CEBBF80617EA1027007722B5 /* FLIPMyWindow.m in Sources */,
@@ -475,9 +471,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\"$(SRCROOT)/OCMock\\\\\\\"",
-					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/DemoUnitTest/OCMock,
-					"\\\"$(SRCROOT)/OCMock\\\"",
 					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,9 +490,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\"$(SRCROOT)/OCMock\\\\\\\"",
-					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/DemoUnitTest/OCMock,
-					"\\\"$(SRCROOT)/OCMock\\\"",
 					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,7 +516,7 @@
 				);
 				INFOPLIST_FILE = "DemoUnitTestTests/DemoUnitTestTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/OCMock/lib\\\"",
+					"\"$(SRCROOT)/OCMock/lib\"",
 					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
 				);
 				OTHER_LDFLAGS = "-all_load";
@@ -556,7 +546,7 @@
 				);
 				INFOPLIST_FILE = "DemoUnitTestTests/DemoUnitTestTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/OCMock/lib\\\"",
+					"\"$(SRCROOT)/OCMock/lib\"",
 					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
 				);
 				OTHER_LDFLAGS = "-all_load";
