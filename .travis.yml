@@ -5,4 +5,4 @@ language: objective-c
 #script: ./build_and_run_unit_tests.sh DemoUnitTest DemoUnitTestTests
 
 #before_install: "git submodule init && git submodule update && sudo gem update --system && sudo gem install bundler && bundle install"
-#script: "bundle exec rake test --trace"
+script: "bundle exec rake test --trace"
