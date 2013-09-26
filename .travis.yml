@@ -7,8 +7,9 @@ language: objective-c
 #before_install: "git submodule init && git submodule update && sudo gem update --system && sudo gem install bundler && bundle install"
 #script: "bundle exec rake test --trace"
 
-xcode_scheme: DemoUnitTest
-script: xcodebuild -scheme DemoUnitTest clean build test
-.result: configured
+before_install:
+- git submodule update --init --recursive
+
+scode_sdk: iphonesimulator
 
 
