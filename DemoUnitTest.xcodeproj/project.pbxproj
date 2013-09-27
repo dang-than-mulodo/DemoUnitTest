@@ -471,7 +471,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoUnitTest/DemoUnitTest-Prefix.pch";
 				INFOPLIST_FILE = "DemoUnitTest/DemoUnitTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
@@ -493,7 +493,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoUnitTest/DemoUnitTest-Prefix.pch";
 				INFOPLIST_FILE = "DemoUnitTest/DemoUnitTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
