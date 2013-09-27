@@ -465,7 +465,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoUnitTest/DemoUnitTest-Prefix.pch";
@@ -477,6 +477,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6497C3BD-C949-4AC1-B5CE-45ABCBCD80E6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -487,7 +488,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoUnitTest/DemoUnitTest-Prefix.pch";
@@ -498,6 +499,7 @@
 					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6497C3BD-C949-4AC1-B5CE-45ABCBCD80E6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
