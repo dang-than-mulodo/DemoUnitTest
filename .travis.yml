@@ -10,6 +10,6 @@ script: "bundle exec rake test --trace"
 #before_install:
 #- git submodule update --init --recursive
 
-#scode_sdk: iphonesimulator
+scode_sdk: iphonesimulator
 
 
