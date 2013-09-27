@@ -89,6 +89,7 @@
 		CE93D63E17E70008003D5F85 /* FLIPPage2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLIPPage2ViewController.xib; sourceTree = "<group>"; };
 		CEBBF80417EA1027007722B5 /* FLIPMyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLIPMyWindow.h; sourceTree = "<group>"; };
 		CEBBF80517EA1027007722B5 /* FLIPMyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLIPMyWindow.m; sourceTree = "<group>"; };
+		CEDAAE0317F57E37007189E9 /* DemoUnitTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DemoUnitTest.entitlements; sourceTree = "<group>"; };
 		CEEE844117EAB9BC009F53BF /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = OCMock/lib/libOCMock.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +172,7 @@
 		CE93D60417E6D8CA003D5F85 /* DemoUnitTest */ = {
 			isa = PBXGroup;
 			children = (
+				CEDAAE0317F57E37007189E9 /* DemoUnitTest.entitlements */,
 				CE3AB1A517EA907A00E1246B /* Components */,
 				CE425EB617E8499600A7C16E /* models */,
 				CE93D60D17E6D8CA003D5F85 /* FLIPAppDelegate.h */,
@@ -277,6 +279,15 @@
 				CLASSPREFIX = FLIP;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Mulodo Inc";
+				TargetAttributes = {
+					CE93D5FA17E6D8CA003D5F85 = {
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = CE93D5F617E6D8CA003D5F85 /* Build configuration list for PBXProject "DemoUnitTest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -464,8 +475,9 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_ENTITLEMENTS = DemoUnitTest/DemoUnitTest.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoUnitTest/DemoUnitTest-Prefix.pch";
@@ -477,6 +489,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -486,6 +499,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_ENTITLEMENTS = DemoUnitTest/DemoUnitTest.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -572,7 +586,7 @@
 				CE93D63217E6D8CB003D5F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CE93D63317E6D8CB003D5F85 /* Build configuration list for PBXNativeTarget "DemoUnitTest" */ = {
 			isa = XCConfigurationList;
@@ -581,7 +595,7 @@
 				CE93D63517E6D8CB003D5F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CE93D63617E6D8CB003D5F85 /* Build configuration list for PBXNativeTarget "DemoUnitTestTests" */ = {
 			isa = XCConfigurationList;
@@ -590,7 +604,7 @@
 				CE93D63817E6D8CB003D5F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
