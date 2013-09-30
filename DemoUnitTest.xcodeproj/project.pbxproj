@@ -488,7 +488,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
+					"$(SRCROOT)/OCMock/lib",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,7 +514,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
+					"$(SRCROOT)/OCMock/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
