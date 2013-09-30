@@ -543,10 +543,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "DemoUnitTestTests/DemoUnitTestTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/OCMock/lib\"",
-					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/OCMock/lib\"";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -575,10 +572,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "DemoUnitTestTests/DemoUnitTestTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/OCMock/lib\"",
-					/Users/user/Copy/Projects/UnitTest/Sources/IOS/Than.Dang/Sources/DemoUnitTest/OCMock/lib,
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/OCMock/lib\"";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
