@@ -490,7 +490,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/OCMock/lib",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -529,6 +529,7 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoUnitTest.app/DemoUnitTest";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -544,6 +545,7 @@
 				);
 				INFOPLIST_FILE = "DemoUnitTestTests/DemoUnitTestTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/OCMock/lib\"";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -558,6 +560,7 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoUnitTest.app/DemoUnitTest";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
