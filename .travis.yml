@@ -7,8 +7,11 @@ language: objective-c
 script: travis-ci/script.sh
 notifications:
   email:
-    - dang.than@mulodo.com
-    - vu.son@mulodo.com
+    recipients:
+      - dang.than@mulodo.com
+      - vu.son@mulodo.com
+    on_success: [always|never|change] #default: change
+    on_failure: [always|never|change] #default: always
 
 
 #before_install: "git submodule init && git submodule update && sudo gem update --system && sudo gem install bundler && bundle install"
