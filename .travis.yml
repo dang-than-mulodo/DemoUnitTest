@@ -5,6 +5,10 @@ language: objective-c
 #script: ./build_and_run_unit_tests.sh DemoUnitTest DemoUnitTestTests
 
 script: travis-ci/script.sh
+notifications:
+  email:
+    - dang.than@mulodo.com
+    - vu.son@mulodo.com
 
 
 #before_install: "git submodule init && git submodule update && sudo gem update --system && sudo gem install bundler && bundle install"
