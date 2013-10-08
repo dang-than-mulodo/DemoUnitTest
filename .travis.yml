@@ -10,8 +10,8 @@ notifications:
     recipients:
       - dang.than@mulodo.com
       - vu.son@mulodo.com
-    on_success: [always|never|change] #default: change
-    on_failure: [always|never|change] #default: always
+    on_success: always #[always|never|change] #default: change
+    on_failure: always #[always|never|change] #default: always
 
 
 #before_install: "git submodule init && git submodule update && sudo gem update --system && sudo gem install bundler && bundle install"
