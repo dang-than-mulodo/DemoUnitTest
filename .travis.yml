@@ -9,10 +9,12 @@ notifications:
   email:
     recipients:
       - dang.than@mulodo.com
-      - vu.son@mulodo.com
     on_success: always #[always|never|change] #default: change
     on_failure: always #[always|never|change] #default: always
-
+    recipients:
+	- caotangxm@gmail.com
+	on_success: always
+	on_failure:always
 
 #before_install: "git submodule init && git submodule update && sudo gem update --system && sudo gem install bundler && bundle install"
 #script: "bundle exec rake test --trace"
